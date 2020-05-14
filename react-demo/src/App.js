@@ -3,13 +3,15 @@ import React from 'react';
 import './App.css';
 
 // import Weather from './components/Weather'
-import Clock from './components/Clock'
+// import Clock from './components/Clock'
+import Parent from './components/parentComponent/Parent'
 
 function App() {
   return (
     <div className="App">
       {/* <Weather weather='下雨'/> */}
-      <Clock />
+      {/* <Clock /> */}
+      <Parent />
     </div>
   );
 }
