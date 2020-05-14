@@ -5,7 +5,8 @@ export default class Parent extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            isActive: true
+            isActive: true,
+            num: 0
         }
     }
 
@@ -13,7 +14,8 @@ export default class Parent extends React.Component {
         return (
             <div>
                 <button onClick={this.changeShow}>控制子元素显示</button>
-                <Child isActive={this.state.isActive} />
+                <div>获取子元素传递的值：{this.state.num}</div>
+                <Child isActive={this.state.isActive} setNum={this.setNum} num={this.state.num}/>
             </div>
         )
     }
@@ -22,6 +24,11 @@ export default class Parent extends React.Component {
         this.setState({
             isActive: !this.state.isActive
         })
+    }
 
+    setNum = (data) => {
+        this.setState({
+            num:data
+        })
     }
 }
