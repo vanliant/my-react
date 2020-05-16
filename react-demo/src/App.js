@@ -6,7 +6,8 @@ import './App.css';
 // import Clock from './components/Clock'
 // import Parent from './components/parentComponent/Parent'
 // import Event from './components/Event'
-import Condition from './components/conditionRender/index'
+// import Condition from './components/conditionRender/index'
+import ListRender from './components/listRender/index'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Clock /> */}
       {/* <Parent /> */}
       {/* <Event /> */}
-      <Condition />
+      {/* <Condition /> */}
+      <ListRender />
     </div>
   );
 }
