@@ -72,3 +72,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### 路由
 
 ` npm install react-router-dom --save` 
+
+### Redux
+
+` npm install redux --save`

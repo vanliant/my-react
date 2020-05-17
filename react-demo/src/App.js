@@ -38,9 +38,6 @@ import routes from './router/router'
 //     </div>
 //   );
 // }
-
-
-// import Login from './pages/login'
 class App extends React.Component {
 
   setRoute = (routes) => {
@@ -60,7 +57,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('dddddd')
     this.setRoute(routes)
     return (
       
