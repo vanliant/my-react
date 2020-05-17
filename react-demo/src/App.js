@@ -1,13 +1,14 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
 // import Weather from './components/Weather'
 // import Clock from './components/Clock'
 // import Parent from './components/parentComponent/Parent'
 // import Event from './components/Event'
 // import Condition from './components/conditionRender/index'
-import ListRender from './components/listRender/index'
+// import ListRender from './components/listRender/index'
+import LifeCycle from './components/lifeCycle'
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Parent /> */}
       {/* <Event /> */}
       {/* <Condition /> */}
-      <ListRender />
+      {/* <ListRender /> */}
+      <LifeCycle />
     </div>
   );
 }
