@@ -7,7 +7,7 @@ import React from 'react';
 // hash 
 // import {HashRouter as Router,Link,Router} from 'react-router-dom'
 // histort
-import { BrowserRouter as Router, Link, Route,Switch,Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route, Switch, Redirect, } from 'react-router-dom'
 
 // import Weather from './components/Weather'
 // import Clock from './components/Clock'
@@ -42,39 +42,38 @@ import routes from './router/router'
 
 // import Login from './pages/login'
 class App extends React.Component {
+
   setRoute = (routes) => {
-      return routes.map((v, i) => {
-        if (v.exact) {
-          return <Route key={i} exact path={v.path}
-            render={props => (
-              <v.component {...props} routes={v.children} />
-            )} />
-        } else {
-          return <Route key={i}  path={v.path}
-            render={props => (
-              <v.component {...props} routes={v.children} />
-            )} />
-        }
-      })
-    
-    
+    return routes.map((v, i) => {
+      if (v.exact) {
+        return <Route key={i} exact path={v.path}
+          render={props => (
+            <v.component {...props} routes={v.children} />
+          )} />
+      } else {
+        return <Route key={i} path={v.path}
+          render={props => (
+            <v.component {...props} routes={v.children} />
+          )} />
+      }
+    })
   }
 
-
   render() {
+    console.log('dddddd')
     this.setRoute(routes)
     return (
+      
       <div className='App'>
-        
         <Router>
-        <Switch>
+          <Switch>
             {
               this.setRoute(routes)
             }
-          </Switch>
             <Redirect from='/*' to='/login'></Redirect>
+          </Switch>
+          
         </Router>
-        
       </div>
     )
   }
