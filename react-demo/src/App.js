@@ -7,7 +7,7 @@ import React from 'react';
 // hash 
 // import {HashRouter as Router,Link,Router} from 'react-router-dom'
 // histort
-import { BrowserRouter as Router, Link, Route, Switch, Redirect, } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect, } from 'react-router-dom'
 
 // import Weather from './components/Weather'
 // import Clock from './components/Clock'
