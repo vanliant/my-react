@@ -75,4 +75,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### Redux
 
-` npm install redux --save`
+` npm install redux react-redux --save`
+
+` npm install redux-thunk --save` 添加异步中间件
+
+https://blog.csdn.net/qq_22936647/article/details/104211036
