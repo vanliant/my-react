@@ -8,7 +8,8 @@ import React from 'react';
 // import Event from './components/Event'
 // import Condition from './components/conditionRender/index'
 // import ListRender from './components/listRender/index'
-import LifeCycle from './components/lifeCycle'
+// import LifeCycle from './components/lifeCycle'
+import Slot from './components/slot'
 
 function App() {
   return (
@@ -19,7 +20,12 @@ function App() {
       {/* <Event /> */}
       {/* <Condition /> */}
       {/* <ListRender /> */}
-      <LifeCycle />
+      {/* <LifeCycle /> */}
+      <Slot>
+        <h2>子组件1</h2>
+        <h2>子组件2</h2>
+        <h2>子组件3</h2>
+      </Slot>
     </div>
   );
 }
