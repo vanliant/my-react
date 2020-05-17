@@ -1,12 +1,12 @@
 const num = 100
 
-const increase = {
-    type:'ADD'
-}
+// const increase = {
+//     type:'ADD'
+// }
 
-const decrease = {
-    type:'REDUCE'
-}
+// const decrease = {
+//     type:'REDUCE'
+// }
 
 const reducer = (state = num ,action) => {
     switch (action.type) {

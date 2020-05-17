@@ -12,6 +12,6 @@ const enhancer = composeEnhancers(
     applyMiddleware(thunk),
 );
 
-const store = createStore(reducer, enhancer);
+const store = createStore(reducer, enhancer);//初始化数据
 
 export default store

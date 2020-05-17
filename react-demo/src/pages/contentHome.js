@@ -6,7 +6,6 @@ import { connect } from 'react-redux'
 class ContentHome extends React.Component{
     render(){
         const { add, reduce } = this.props;
-        console.log('ddddd',this.props.num)
         return(
             <div>
                 <h1>Redux的使用:{this.props.num}</h1>
@@ -19,7 +18,6 @@ class ContentHome extends React.Component{
 
 //需要渲染什么数据
 function mapStateToProps(state) {
-    console.log(state,'mmm')
     return {
       num: state
     }
