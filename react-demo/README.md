@@ -80,3 +80,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ` npm install redux-thunk --save` 添加异步中间件
 
 https://blog.csdn.net/qq_22936647/article/details/104211036
+
+
+
+### less
+
+#### `npm run eject` 暴露config
+
+#### `npm install less less-loader --save` 安装less
+
+https://www.jianshu.com/p/d5dd8b108461
+
+
+
+### antd
+
+`npm install antd --save` 
+
+`npm install babel-plugin-import --save-dev` 按需引用
+
+###### "style": "true"，由于使用了less，在修改package.json时，style改为 “true”
